@@ -1,0 +1,617 @@
+{
+    // editor
+    "editor.mouseWheelZoom": true,
+    "editor.largeFileOptimizations": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.codeLens": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.minimap.enabled": false,
+    "editor.accessibilitySupport": "on",
+    "markdown.preview.breaks": true,
+
+
+    // 主题
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme",
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+
+
+    // 窗口
+    "window.menuBarVisibility": "toggle",
+    "window.customMenuBarAltFocus": false,
+    "window.commandCenter": true,
+
+
+    // 终端
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": [
+                "-NoExit",
+                "/K",
+                "chcp 65001"
+            ]
+        },
+        "PowerShell": {
+            "source": "PowerShell",
+            "args": [
+                "-NoExit",
+                "/C",
+                "chcp 65001"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.external.windowsExec": "powershell",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiBlack",
+
+
+    // 字体
+    "editor.fontFamily": "'JetBrains Mono','PingFang SC Regular'",
+    "debug.console.fontFamily": "'JetBrains Mono','PingFang SC Regular'",
+    "terminal.integrated.fontFamily": "'Cascadia Code','PingFang SC Regular'",
+    "editor.fontSize": 18,
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "editor.lineHeight": 1.8,
+    "window.titleBarStyle": "custom",
+    "files.autoSave": "onFocusChange",
+
+
+    // C/C++
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+
+
+    // clangd
+    "clangd.path": "c:\\Users\\13628\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\15.0.6\\clangd_15.0.6\\bin\\clangd.exe",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--background-index",
+        "--clang-tidy",
+        "--pch-storage=memory",
+        "--all-scopes-completion",
+        "--header-insertion=never",
+        "-j=12"
+    ],
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    
+
+    // clangd-lldb
+    "lldb.launch.terminal": "console",
+
+    // doc test
+    "testMate.cpp.test.executables": "bin/*",
+    "testMate.cpp.log.userId": "0d82e1c2867b6e02322043f6c91c10b63da8d01c",
+    "testMate.cpp.log.logSentry": "enable",
+
+    // doxygen documentation generator
+    "doxdocgen.c.commentPrefix": "/// ",
+    "doxdocgen.c.firstLine": "",
+    "doxdocgen.c.lastLine": "",
+    "doxdocgen.c.triggerSequence": "///",
+    "doxdocgen.generic.authorName": "ZEL",
+    "doxdocgen.generic.authorEmail": "zel1362848545@gmail.com",
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Copyright (c) {year} ZEL"
+    ],
+
+    // git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.ignoreLegacyWarning": true,
+    "files.autoGuessEncoding": true,
+    "git.openRepositoryInParentFolders": "always",
+
+
+    // remote
+    "remote.SSH.remotePlatform": {
+        "华为云": "linux"
+    },
+
+
+    // cmake tools
+    "cmake.configureOnEdit": false,
+    "cmake.configureOnOpen": false,
+    "cmake.generator": "Ninja",
+    "cmake.cmakePath": "cmake",
+    "cmake.outputLogEncoding": "gbk",
+    // "cmake.debugConfig": {
+    //     "type": "lldb",
+    //     "request": "launch",
+    //     "name": "Debug",
+    //     "program": "${command:cmake.launchTargetPath}",
+    //     "args": [],
+    //     "cwd": "${workspaceFolder}",
+    // },
+
+
+    // Qt tools
+    "qtConfigure.mingwPath": " D:\\Qt\\Tools\\mingw810_32",
+    "qtConfigure.qtDir": "D:\\Qt",
+    "qtConfigure.qtKitDir": " D:\\Qt\\5.15.2\\mingw81_32",
+
+    // 自动切换输入法
+    // "vim.autoSwitchInputMethod.enable": true,
+    // "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",  // 这里输入你刚刚获得的英文输入法名称
+    // "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+    // "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+    
+
+
+    // Better Comments
+    "better-comments.tags": [
+        {
+            // 表示有未完成的代码
+            "tag": "TODO",
+            "color": "#FA973A",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // 表示代码需要修正
+            "tag": "FIXME",
+            "color": "#FF0000",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // 提示
+            "tag": "HINT",
+            "color": "#2FAF64",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // 笔记
+            "tag": "NOTE",
+            "color": "#00B7E4",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // 表示之后可能会出现问题
+            "tag": "HACK",
+            "color": "#FA973A",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // 代码有问题
+            "tag": "BUG",
+            "color": "#FF0000",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "workbench.colorCustomizations": {
+        // error lens
+        "errorLens.errorForeground": "#ff0000", // BUG FIXME
+        "errorLens.warningBackground": "#fa973a51", // HACK TODO
+        "errorLens.infoBackground": "#00B7E4", // NOTE
+        "errorLens.hintBackground": "#2FAF64", // HINT
+        // 终端颜色
+        "terminal.background": "#0C0D0E",
+        "terminal.foreground": "#B7B8B9",
+        "terminalCursor.background": "#B7B8B9",
+        "terminalCursor.foreground": "#B7B8B9",
+        "terminal.ansiBlack": "#0C0D0E",
+        "terminal.ansiBlue": "#3182BD",
+        "terminal.ansiBrightBlack": "#737475",
+        "terminal.ansiBrightBlue": "#3182BD",
+        "terminal.ansiBrightCyan": "#80B1D3",
+        "terminal.ansiBrightGreen": "#31A354",
+        "terminal.ansiBrightMagenta": "#756BB1",
+        "terminal.ansiBrightRed": "#E31A1C",
+        "terminal.ansiBrightWhite": "#FCFDFE",
+        "terminal.ansiBrightYellow": "#DCA060",
+        "terminal.ansiCyan": "#80B1D3",
+        "terminal.ansiGreen": "#31A354",
+        "terminal.ansiMagenta": "#756BB1",
+        "terminal.ansiRed": "#E31A1C",
+        "terminal.ansiWhite": "#B7B8B9",
+        "terminal.ansiYellow": "#DCA060"
+    },
+
+
+    // vim
+    "vim.camelCaseMotion.enable": true,
+    "vim.easymotion": true,
+    "vim.foldfix": false, // to avoid fold open up autocamatically
+    "vim.sneak": false,
+    "vim.surround": true,
+    "vim.useCtrlKeys": false,
+    "vim.useSystemClipboard": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "c:\\.vsvimrc",
+
+
+
+    // "vim.vimrc.path": "/Users/zel/.vsvimrc",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-i>": true,
+        "<C-o>": true,
+        "<C-r>": true,
+        "<C-s>": false,
+        "<C-v>": true,
+        "<C-w>": true,
+        "<C-u>": true,
+    },
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.leader": ";",
+    "vim.normalModeKeyBindings": [
+        { // which key
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "extension.dash.specific"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "q",
+            ],
+            "commands": [
+                "workbench.action.closeEditorsInGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "u"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "U"
+            ],
+            "commands": [
+                "references-view.findReferences"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "i",
+                "n"
+            ],
+            "commands": [
+                "references-view.showCallHierarchy"
+            ]
+        },
+        // -- run
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.files.save",
+                "workbench.action.debug.run"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.files.save",
+                "workbench.action.debug.start"
+            ]
+        },
+        // -- debug
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "b"
+            ],
+            "commands": [
+                "editor.debug.action.toggleBreakpoint"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "c"
+            ],
+            "commands": [
+                "editor.debug.action.conditionalBreakpoint"
+            ]
+        },
+        // -- problem nav
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "k"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "j"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
+        },
+        // -- git hunk nav
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.editor.previousChange",
+                "editor.action.dirtydiff.previous"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.editor.nextChange",
+                "editor.action.dirtydiff.next"
+            ]
+        },
+        // git (un)stage 
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "s"
+            ],
+            "commands": [
+                "git.stage",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "u"
+            ],
+            "commands": [
+                "git.unstage",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "r"
+            ],
+            "commands": [
+                "git.revertSelectedRanges",
+            ]
+        },
+        // -- rename symbol
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "n"
+            ],
+            "commands": [
+                "editor.action.rename",
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        { // which key
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        },
+        // repeatly indent in visual mode
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatSelection"
+            ]
+        },
+        { // p action will not override clipboard content
+            "before": [
+                "p"
+            ],
+            "after": [
+                "p",
+                "g",
+                "v",
+                "y",
+            ]
+        },
+    ],
+
+    // which key
+    "whichkey.bindings": [
+        {
+            "key": "e",
+            "name": "Show tree/explorer view",
+            "type": "conditional",
+            "bindings": [
+                {
+                    "key": "",
+                    "name": "default",
+                    "type": "command",
+                    "command": "workbench.view.explorer"
+                },
+                {
+                    "key": "when:sideBarVisible && explorerViewletVisible",
+                    "name": "Hide explorer",
+                    "type": "command",
+                    "command": "workbench.action.toggleSidebarVisibility"
+                }
+            ],
+        },
+        {
+            "key": "o",
+            "name": "Outline",
+            "type": "conditional",
+            "bindings": [
+                {
+                    "key": "",
+                    "name": "default",
+                    "type": "command",
+                    "command": "extension.multiCommand.execute",
+                    "args": {
+                        "sequence": [
+                            "outline.focus",
+                            "outline.focus",
+                        ]
+                    },
+                },
+                {
+                    "key": "when:outlinerExplorerView.active && view.outline.visible",
+                    "name": "Hide outline",
+                    "type": "command",
+                    "command": "workbench.action.toggleAuxiliaryBar"
+                }
+            ],
+        },
+        {
+            "key": "g",
+            "name": "Source contrl",
+            "type": "command",
+            "command": "workbench.view.scm",
+        },
+        {
+            "command": "workbench.action.openRecent",
+            "key": "r",
+            "name": "打开最近的文件",
+            "type": "command"
+        },
+        {
+            "command": "workbench.action.quickOpen",
+            "key": "f",
+            "name": "Find file",
+            "type": "command"
+        },
+        {
+            "command": "workbench.view.search",
+            "key": "F",
+            "name": "Search Word",
+            "type": "command"
+        },
+        {
+            "command": "search.action.openEditor",
+            "key": "w",
+            "name": "New Search Editor",
+            "type": "command"
+        },
+        {
+            "command": "workbench.action.gotoSymbol",
+            "key": "s",
+            "name": "Search document symbol",
+            "type": "command"
+        },
+        {
+            "command": "workbench.action.showAllSymbols",
+            "key": "S",
+            "name": "Search project symbol",
+            "type": "command"
+        },
+    ],
+    "files.exclude": {
+        "**/*.out": true
+    },
+   
+    "audioCues.lineHasError": "off",
+    "explorer.confirmDelete": false,
+
+    "security.workspace.trust.untrustedFiles": "open",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.editorAssociations": {
+        "*.txt": "default"
+    },
+
+}
